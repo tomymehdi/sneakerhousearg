@@ -2,12 +2,13 @@
 heading: Great coffee with a conscience
 path: /products
 templateKey: product-page
-title: Our Coffee
+title: Sneaker House ARG
 image: https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1200/https://sneakerhousearg.com/wp-content/uploads/2022/04/portada-web-santa-salut.jpg
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+description: "Bienvenido al calendario SneakerHouseArg con nuevos lanzamientos
+  de sneakers de algunas de las marcas más importantes, incluyendo: Jordan,
+  Nike, New Balance, Adidas, Puma, Vans, entre otras. Encontrarás información
+  del catálogo y los sitios donde encontrarlas.  Puedes seguirnos en redes para
+  enterarse de las actualizaciones de este sitio."
 intro:
   blurbs:
     - image: /img/coffee.png
