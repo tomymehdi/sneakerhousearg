@@ -170,6 +170,7 @@ export const productPageQuery = graphql`
               }
             }
             text
+            calendar
           }
           heading
           description

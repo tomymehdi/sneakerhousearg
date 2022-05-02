@@ -1,74 +1,111 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
-
 import Layout from "../components/Layout";
 import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
+import Testimonials from "../components/Testimonials";
+import Pricing from "../components/Pricing";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import FullWidthImage from "../components/FullWidthImage";
+import Mailchimp from "../components/Mailchimp"
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
   title,
   heading,
-  subheading,
-  mainpitch,
   description,
   intro,
+  main,
+  testimonials,
+  fullImage,
+  pricing,
 }) => {
   const heroImage = getImage(image) || image;
+  const fullWidthImage = getImage(fullImage) || fullImage;
 
   return (
-    <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+    <div className="content">
+      <FullWidthImage img={heroImage} title={title} />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">
+              <div className="column is-7 is-offset-1">
+                <h3 className="has-text-weight-semibold is-size-2">
+                  {heading}
+                </h3>
+                <p>{description}</p>
+              </div>
+            </div>
+            <div className="columns">
               <div className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="content">
-                    <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div>
-                  </div>
-                  <div className="columns">
-                    <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
-                      </h3>
-                      <p>{description}</p>
-                    </div>
-                  </div>
-                  <Features gridItems={intro.blurbs} />
-                  <div className="columns">
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/products">
-                        See all products
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      Latest stories
+                <Features gridItems={intro.blurbs} /> 
+                <div className="columns">
+                  <div className="column is-7">
+                    <h3 className="has-text-weight-semibold is-size-3">
+                      {main.heading}
                     </h3>
-                    <BlogRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
-                        Read more
-                      </Link>
+                    <p>{main.description}</p>
+                  </div>
+                </div>
+                <div className="tile is-ancestor">
+                  <div className="tile is-vertical">
+                    <div className="tile">
+                      <div className="tile is-parent is-vertical">
+                        <article className="tile is-child">
+                          <PreviewCompatibleImage imageInfo={main.image1} />
+                        </article>
+                      </div>
+                      <div className="tile is-parent">
+                        <article className="tile is-child">
+                          <PreviewCompatibleImage imageInfo={main.image2} />
+                        </article>
+                      </div>
+                    </div>
+                    <div className="tile is-parent">
+                      <article className="tile is-child">
+                        <PreviewCompatibleImage imageInfo={main.image3} />
+                      </article>
                     </div>
                   </div>
                 </div>
+                {/* <Testimonials testimonials={testimonials} /> */}
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <FullWidthImage img={fullWidthImage} imgPosition={"bottom"} />
+      {/* <section className="section section--gradient">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
+                <h2 className="has-text-weight-semibold is-size-2">
+                  {pricing.heading}
+                </h2>
+                <p className="is-size-5">{pricing.description}</p>
+                <Pricing data={pricing.plans} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      <section>
+        <Mailchimp
+          className='mailchimp'
+          action='https://SneakerhouseArg.us1.list-manage.com/subscribe/post?u=d131e06faade9c1bc0aa94d13&amp;id=8c9333efad'
+          fields={[
+            {
+              name: 'EMAIL',
+              placeholder: 'Email',
+              type: 'email',
+              required: true
+            }
+          ]}
+          />
       </section>
     </div>
   );
@@ -78,11 +115,23 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
+  }),
+  main: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
+  testimonials: PropTypes.array,
+  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  pricing: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
+    plans: PropTypes.array,
   }),
 };
 
@@ -95,10 +144,12 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        main={frontmatter.main}
+        testimonials={frontmatter.testimonials}
+        fullImage={frontmatter.full_image}
+        pricing={frontmatter.pricing}
       />
     </Layout>
   );
@@ -114,9 +165,9 @@ IndexPage.propTypes = {
 
 export default IndexPage;
 
-export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+export const IndexPageQuery = graphql`
+  query IndexPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
         image {
@@ -125,11 +176,6 @@ export const pageQuery = graphql`
           }
         }
         heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
         description
         intro {
           blurbs {
@@ -139,9 +185,58 @@ export const pageQuery = graphql`
               }
             }
             text
+            calendar
           }
           heading
           description
+        }
+        main {
+          heading
+          description
+          image1 {
+            alt
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
+              }
+            }
+          }
+          image2 {
+            alt
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
+              }
+            }
+          }
+          image3 {
+            alt
+            image {
+              childImageSharp {
+                gatsbyImageData(quality: 72, layout: FULL_WIDTH)
+              }
+            }
+          }
+        }
+        testimonials {
+          author
+          quote
+        }
+
+        full_image {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
+        pricing {
+          heading
+          description
+          plans {
+            description
+            items
+            plan
+            price
+          }
         }
       }
     }

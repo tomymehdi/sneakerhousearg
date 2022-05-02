@@ -18,6 +18,9 @@ const FeatureGrid = ({ gridItems }) => (
             </div>
           </div>
           <p>{item.text}</p>
+          <a target="_blank" href={item.calendar} rel="noreferrer">
+            <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"/>
+          </a>
         </section>
       </div>
     ))}
