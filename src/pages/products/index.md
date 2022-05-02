@@ -52,7 +52,10 @@ main:
     journey. We personally visit each farm to make sure the conditions are
     optimal for the plants, farmers and the local environment.
   image1:
-    alt: A close-up of a paper filter filled with ground coffee
+    alt: A close-up of a paper filter filled with ground coffee <a target="_blank"
+      href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MWZyYjNlbm9mbmhzOG9pZzRocjE5dXVjanIgdG9teW1laGRpQG0&amp;tmsrc=tomymehdi%40gmail.com"><img
+      border="0"
+      src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
     image: /img/products-grid3.jpg
   image2:
     alt: A green cup of a coffee on a wooden table
