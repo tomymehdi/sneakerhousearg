@@ -1,13 +1,12 @@
 ---
-templateKey: 'index-page'
+templateKey: index-page
 title: Our Coffee
-image: /img/jumbotron.jpg
+image: /img/banner-calendar-sneakerhouse.jpg
 heading: Great coffee with a conscience
-description: >-
-  sneakerhousearg is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+description: sneakerhousearg is the ultimate spot for coffee lovers who want to
+  learn about their java’s origin and support the farmers that grew it. We take
+  coffee production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -18,6 +17,7 @@ intro:
         local communities. Check our post or contact us directly for current
         availability.
       calendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWZyYjNlbm9mbmhzOG9pZzRocjE5dXVjanIgdG9teW1laGRpQG0&tmsrc=tomymehdi%40gmail.com
+      url: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWZyYjNlbm9mbmhzOG9pZzRocjE5dXVjanIgdG9teW1laGRpQG0&tmsrc=tomymehdi%40gmail.com
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
@@ -25,6 +25,7 @@ intro:
         own beans or just bought your first french press, you’ll find a gadget
         to fall in love with in our shop.
       calendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWZyYjNlbm9mbmhzOG9pZzRocjE5dXVjanIgdG9teW1laGRpQG0&tmsrc=tomymehdi%40gmail.com
+      url: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWZyYjNlbm9mbmhzOG9pZzRocjE5dXVjanIgdG9teW1laGRpQG0&tmsrc=tomymehdi%40gmail.com
     - image: /img/tutorials.png
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a
@@ -33,6 +34,7 @@ intro:
         to learn anything you want to know about coffee roasting and brewing.
         Email us or call the store for details.
       calendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWZyYjNlbm9mbmhzOG9pZzRocjE5dXVjanIgdG9teW1laGRpQG0&tmsrc=tomymehdi%40gmail.com
+      url: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWZyYjNlbm9mbmhzOG9pZzRocjE5dXVjanIgdG9teW1laGRpQG0&tmsrc=tomymehdi%40gmail.com
     - image: /img/meeting-space.png
       text: >
         We believe that good coffee has the power to bring people together.
@@ -41,12 +43,13 @@ intro:
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
       calendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWZyYjNlbm9mbmhzOG9pZzRocjE5dXVjanIgdG9teW1laGRpQG0&tmsrc=tomymehdi%40gmail.com
+      url: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWZyYjNlbm9mbmhzOG9pZzRocjE5dXVjanIgdG9teW1laGRpQG0&tmsrc=tomymehdi%40gmail.com
   heading: What we offer
   description: >
-    sneakerhousearg is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    sneakerhousearg is the ultimate spot for coffee lovers who want to learn
+    about their java’s origin and support the farmers that grew it. We take
+    coffee production, roasting and brewing seriously and we’re glad to pass
+    that knowledge to anyone. This is an edit via identity...
 main:
   heading: Great coffee with no compromises
   description: >
@@ -65,20 +68,17 @@ main:
     image: /img/products-grid1.jpg
 testimonials:
   - author: Elisabeth Kaurismäki
-    quote: >-
-      The first time I tried sneakerhousearg’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
+    quote: The first time I tried sneakerhousearg’s coffee, I couldn’t even believe
+      that was the same thing I’ve been drinking every morning.
   - author: Philipp Trommler
-    quote: >-
-      sneakerhousearg is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
+    quote: sneakerhousearg is the place to go if you want the best quality coffee. I
+      love their stance on empowering farmers and transparency.
 full_image: /img/products-full-width.jpg
 pricing:
   heading: Monthly subscriptions
-  description: >-
-    We make it easy to make great coffee a part of your life. Choose one of our
-    monthly subscription plans to receive great coffee at your doorstep each
-    month. Contact us about more details and payment info.
+  description: We make it easy to make great coffee a part of your life. Choose
+    one of our monthly subscription plans to receive great coffee at your
+    doorstep each month. Contact us about more details and payment info.
   plans:
     - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
       items:
@@ -86,19 +86,19 @@ pricing:
         - Green or roasted beans"
         - One or two varieties of beans"
       plan: Small
-      price: '50'
-    - description: 'Great for avid drinkers, java-loving couples and bigger crowds'
+      price: "50"
+    - description: Great for avid drinkers, java-loving couples and bigger crowds
       items:
         - 6 lbs of coffee per month
         - Green or roasted beans
         - Up to 4 different varieties of beans
       plan: Big
-      price: '80'
+      price: "80"
     - description: Want a few tiny batches from different varieties? Try our custom plan
       items:
         - Whatever you need
         - Green or roasted beans
         - Unlimited varieties
       plan: Custom
-      price: '??'
+      price: ??
 ---
