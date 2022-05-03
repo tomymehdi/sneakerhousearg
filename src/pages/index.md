@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Our Coffee
+title: " "
 image: /img/banner-calendar-sneakerhouse.jpg
 heading: Great coffee with a conscience
 description: sneakerhousearg is the ultimate spot for coffee lovers who want to
