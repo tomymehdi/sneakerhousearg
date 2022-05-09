@@ -11,11 +11,13 @@ intro:
   blurbs:
     - image: /img/coffee.png
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        Titulo</br>
+
+        Descripcion</br>
+
+        Precio</br>
+
+        We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability.
       calendar: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWZyYjNlbm9mbmhzOG9pZzRocjE5dXVjanIgdG9teW1laGRpQG0&tmsrc=tomymehdi%40gmail.com
       url: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWZyYjNlbm9mbmhzOG9pZzRocjE5dXVjanIgdG9teW1laGRpQG0&tmsrc=tomymehdi%40gmail.com
     - image: /img/coffee-gear.png
